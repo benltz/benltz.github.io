@@ -1,30 +1,42 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+/* Grundstyles für die Seite */
+body, html {
     margin: 0;
     padding: 0;
-    text-align: center;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
 }
 
-header {
-    background-color: gold;
-    padding: 20px;
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    perspective: 1000px;
 }
 
-main {
-    margin: 20px;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: darkblue;
+.content {
+    position: relative;
+    z-index: 1;
     color: white;
-    border: none;
-    cursor: pointer;
+    text-align: center;
+    margin-top: 200px;
+    font-size: 24px;
 }
 
-button:hover {
-    background-color: royalblue;
+/* 3D-Scroll Effekt */
+body {
+    perspective: 1000px;
 }
 
+h1 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 1.5em;
+}
