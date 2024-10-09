@@ -7,16 +7,15 @@ body, html {
     overflow-x: hidden;
 }
 
-.background {
+.background-layer {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
-    transform: translateZ(-1px) scale(2);
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    transform: translateZ(-1px) scale(2); /* 3D Effekt */
     z-index: -1;
-    perspective: 1000px;
 }
 
 .content {
@@ -26,11 +25,6 @@ body, html {
     text-align: center;
     margin-top: 200px;
     font-size: 24px;
-}
-
-/* 3D-Scroll Effekt */
-body {
-    perspective: 1000px;
 }
 
 h1 {
